@@ -18,7 +18,7 @@ const pool = mysql.createPool({
   queueLimit: 0,
 });
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 module.exports = { pool, port };
 
